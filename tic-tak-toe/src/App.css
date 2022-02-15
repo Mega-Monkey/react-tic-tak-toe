@@ -12,6 +12,10 @@
   display: flex;
 }
 
-.selected {
+.selected-one {
   background-color: cornflowerblue;
+}
+
+.selected-two {
+  background-color: tomato;
 }

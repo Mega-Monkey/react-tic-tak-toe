@@ -1,38 +1,23 @@
+import { useState } from 'react';
 import './App.css';
 import Square from "./components/Square"
+import Row from './components/Row';
 
 function App() {
+  const [currentPlayer, SetCurrentPlayer] = useState({playerOne: true})
+
+  function handleSelectSquare() {
+    if (square is unselsected) {
+      change color of square
+      change player
+    }
+  }
+
   return (
     <div className="App">
-
-      <div className='row'>
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-      </div>
-
-      <div className='row'>
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-      </div>
-
-      <div className='row'>
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-      </div>
-
-      <div className='row'>
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-      </div>
-
+        <Row currentPlayer={currentPlayer} />
+        <Row currentPlayer={currentPlayer} />
+        <Row currentPlayer={currentPlayer} />
     </div>
   );
 }
